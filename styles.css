@@ -7,7 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fff;
+  background: #ffffff;
   color: #111;
   line-height: 1.6;
 }
@@ -18,16 +18,11 @@ header {
   align-items: center;
   padding: 20px 50px;
   background: #fff;
+  border-bottom: 1px solid #eee;
 }
 
-header .logo {
-  font-weight: 700;
-  font-size: 24px;
-  color: #111;
-}
-
-header .logo span {
-  color: #0044cc;
+.logo-img {
+  height: 50px;
 }
 
 nav a {
@@ -35,6 +30,7 @@ nav a {
   text-decoration: none;
   color: #111;
   font-weight: 600;
+  font-size: 16px;
 }
 
 nav a:hover {
@@ -44,12 +40,13 @@ nav a:hover {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: #f9f9f9;
+  background: #f7f9fc;
 }
 
 .hero h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 
 .hero p {
@@ -59,17 +56,18 @@ nav a:hover {
 }
 
 .hero button {
-  padding: 10px 30px;
+  padding: 12px 30px;
   font-size: 18px;
   background: #0044cc;
   color: #fff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
+  transition: background 0.3s;
 }
 
 .hero button:hover {
-  background: #0033aa;
+  background: #003399;
 }
 
 section {
@@ -80,8 +78,9 @@ section {
 
 .services, .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
+  margin-top: 40px;
 }
 
 .service-item, .portfolio-item {
@@ -93,18 +92,21 @@ section {
 }
 
 .service-item h3, .portfolio-item h3 {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+  font-size: 22px;
 }
 
 .contact {
   text-align: center;
+  margin-top: 60px;
 }
 
-.footer {
+footer.footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
   color: #777;
+  border-top: 1px solid #eee;
   margin-top: 40px;
 }
 
