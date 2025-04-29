@@ -1,122 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zero2Web - Building Websites That Drive Business Growth</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zero2Web - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<header>
-  <div class="container nav">
-    <div class="logo">
-      <img src="Zero2Web_Logo.png" alt="Zero2Web Logo">
-    </div>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</header>
-
-<section class="hero">
-  <div class="container">
-    <h1>Websites That Launch Your Business</h1>
-    <p>Building minimalist, high-performing websites that turn visitors into customers.</p>
-    <a href="#contact" class="btn">Let's Talk</a>
-  </div>
-</section>
-
-<section id="about" class="section light-bg">
-  <div class="container split">
-    <div class="text">
-      <h2>About Us</h2>
-      <p>We help businesses of all sizes create powerful digital presences. Our philosophy is simple: clean, modern design focused on growth and clarity.</p>
-    </div>
-    <div class="image">
-      <img src="Zero2Web_Logo.png" alt="About Zero2Web">
-    </div>
-  </div>
-</section>
-
-<section id="services" class="section">
-  <div class="container">
-    <h2>Our Services</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Website Design</h3>
-        <p>Tailored designs to fit your brand identity with a focus on simplicity and impact.</p>
-      </div>
-      <div class="card">
-        <h3>Responsive Development</h3>
-        <p>Websites that look stunning on desktops, tablets, and smartphones.</p>
-      </div>
-      <div class="card">
-        <h3>E-Commerce Solutions</h3>
-        <p>Elegant online stores designed to maximize your sales and customer experience.</p>
+  <section id="portfolio" class="section light-bg">
+    <div class="container">
+      <h2>Portfolio</h2>
+      <div class="grid">
+        <div class="portfolio-item">
+          <img src="vertex-tech.png" alt="Vertex Tech" />
+          <h4>Vertex Tech</h4>
+        </div>
+        <div class="portfolio-item">
+          <img src="luna-interiors.png" alt="Luna Interiors" />
+          <h4>Luna Interiors</h4>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-<section id="portfolio" class="section light-bg">
-  <div class="container">
-    <h2>Recent Projects</h2>
-    <div class="grid">
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/400x250" alt="Vertex Tech">
-        <h4>Vertex Tech</h4>
-      </div>
-      <div class="portfolio-item">
-        <img src="https://via.placeholder.com/400x250" alt="Luna Interiors">
-        <h4>Luna Interiors</h4>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="testimonials" class="section">
-  <div class="container">
-    <h2>What Our Clients Say</h2>
-    <div class="grid">
-      <div class="testimonial">
-        <p>"Zero2Web made launching my business online simple and stress-free. Highly recommended!"</p>
-      </div>
-      <div class="testimonial">
-        <p>"Clean designs, excellent communication, and real results. Couldn't ask for better."</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="section light-bg">
-  <div class="container">
-    <h2>Let's Work Together</h2>
-    <p>Email: <a href="mailto:Zero2Web@outlook.com">Zero2Web@outlook.com</a> | Phone: <a href="tel:+447306100251">+44 7306 100251</a></p>
-  </div>
-</section>
-
-<footer>
-  <div class="container">
-    <p>&copy; 2025 Zero2Web. All Rights Reserved.</p>
-  </div>
-</footer>
-
-<script>
-const links = document.querySelectorAll('nav a');
-links.forEach(link => {
-  link.addEventListener('click', (e) => {
-    e.preventDefault();
-    const href = link.getAttribute('href');
-    document.querySelector(href).scrollIntoView({ behavior: 'smooth' });
-  });
-});
-</script>
-
+  </section>
 </body>
 </html>
